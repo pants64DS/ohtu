@@ -1,3 +1,4 @@
+
 class Project:
     def __init__(self, name, description, license, authors, dependencies, dev_dependencies):
         self.name = name
