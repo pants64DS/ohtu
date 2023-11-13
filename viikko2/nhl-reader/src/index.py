@@ -11,7 +11,10 @@ def main():
 
     for player_dict in response:
         player = Player(player_dict)
-        players.append(player)
+        if player.nationality == "FIN":
+            players.append(player)
+
+    players.sort(key=lambda p: -(p.goals + p.assists))
 
     print("Oliot:")
 
